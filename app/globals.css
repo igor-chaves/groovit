@@ -110,6 +110,7 @@ img {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
+  padding: 1rem 0;
   border: 3px solid green;
 }
 
