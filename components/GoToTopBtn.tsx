@@ -15,6 +15,7 @@ const GoToTopBtn = () => {
   return (
     <FontAwesomeIcon
       icon={faCircleArrowUp}
+      size="2x"
       onClick={scrollToTop}
       className={`text-gray-600 fixed bottom-10 right-10 transition-opacity duration-300 cursor-pointer
         ${scrollVertical > 100 ? "opacity-100" : "opacity-0 pointer-events-none"} `}
