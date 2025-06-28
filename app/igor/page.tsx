@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Igor() {
   return (
     <div>
@@ -20,13 +22,17 @@ export default function Igor() {
       <div className="w-full bg-gray-300 py-10">
         <h1 className="text-center">OUR SERVICES</h1>
 
-        <div className="flex mx-10 my-20 px-30">
+        <div className="flex flex-col gap-8 mx-10 my-20 md:flex-row md:px-30">
           <div className="flex-1 flex items-center justify-start">
-            <img
-              className="rounded-xl max-h-[300px]"
-              src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <Image
+              src="/ses.avif"
+              alt="SES image"
+              width={450}
+              height={450}
+              className="rounded-xl object-cover object-center w-full !h-[150px] md:!h-[350px] md:!w-[450px]"
             />
           </div>
+
           <div className="flex-1 flex flex-col justify-center">
             <h2 className="!m-0 !p-0">SES</h2>
             <p className="!m-0 !p-0 !mb-5">システムエンジニアリングサービス</p>
@@ -34,23 +40,6 @@ export default function Igor() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut odio, aliquam ratione placeat magnam? Quam
               odio voluptatem autem rem voluptates hic quidem natus fuga molestias voluptas, impedit quas error.
             </p>
-          </div>
-        </div>
-
-        <div className="flex mx-10 my-20 px-30">
-          <div className="flex-1 flex flex-col justify-center">
-            <h2 className="!m-0 !p-0">SIER</h2>
-            <p className="!m-0 !p-0 !mb-5">システムインテグレーター</p>
-            <p className="!m-0 !p-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut odio, aliquam ratione placeat magnam? Quam
-              odio voluptatem autem rem voluptates hic quidem natus fuga molestias voluptas, impedit quas error.
-            </p>
-          </div>
-          <div className="flex-1 flex items-center justify-end">
-            <img
-              className="rounded-xl max-h-[300px]"
-              src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
           </div>
         </div>
       </div>
