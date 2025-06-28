@@ -12,7 +12,7 @@ export default function Igor() {
           </h3>
           <span className="max-w-[400px] text-sm text-black">Grow up your business by getting online.</span>
           <span className="max-w-[400px] text-sm text-black">
-            When you're on the internet you atract more costumers.
+            When you`&apos;re on the internet you atract more costumers.
           </span>
           <p className="bg-gray-700 w-fit px-4 py-2 rounded-full text-white">Contact us</p>
         </div>
