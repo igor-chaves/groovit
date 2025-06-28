@@ -1,11 +1,31 @@
 export default function Home() {
   return (
     <>
-      <section className="container-md">
+      {/* <section className="container-md">
         <h1>SECTION 1 - mid</h1>
-      </section>
-      <section className="container-lg">
+      </section> */}
+      {/* <section className="container-lg">
         <h1>SECTION 2 - large</h1>
+      </section> */}
+      <section
+        className="container-lg bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        }}>
+        <div className="min-h-[400px] flex gap-2">
+          <div className="border-pink-700 border-8 flex flex-col flex-1 justify-center m-8 p-8">
+            <h3 className="text-white text-4xl font-bold">Bem-vindo ao site</h3>
+            <p>AKSODKAOSDKO</p>
+          </div>
+          <div className="border-pink-700 border-8 flex-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, consectetur illo? Fugiat distinctio nam
+              esse, deserunt atque impedit recusandae neque modi, voluptates soluta, architecto dolorum vitae delectus
+              aut dignissimos error.
+            </p>
+          </div>
+        </div>
       </section>
       {/* SERVICES SECTION */}
       <section className="container-md">
