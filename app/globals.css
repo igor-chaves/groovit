@@ -112,13 +112,13 @@ img {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
-  padding: 1rem 0;
-  border: 3px solid green;
+  padding: 0.75rem 0;
+  /* border: 3px solid green; */
 }
 
 .container-lg {
   width: 100%;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 
 /* Media query para telas grandes (desktops) */

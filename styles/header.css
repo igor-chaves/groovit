@@ -33,7 +33,7 @@
 
 @media (max-width: 1024px) {
   .navbar-logo {
-    width: 50px;
+    width: 40px;
   }
   .hideOnMobile {
     display: none;

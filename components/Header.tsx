@@ -33,8 +33,8 @@ const Header = () => {
       <div className="container-md flex items-center justify-between">
         <svg
           className="navbar-logo"
-          width="65"
-          height="65"
+          width="40"
+          height="40"
           viewBox="0 0 75 84"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@ const Header = () => {
           <ul className={`sidebar ${showSidebar ? "flex flex-col" : "hidden"}`}>
             <li>
               <Link onClick={() => setShowSidebar(false)} href="">
-                <FontAwesomeIcon icon={faXmark} size="2x" />
+                <FontAwesomeIcon icon={faXmark} size="xl" />
               </Link>
             </li>
             {sidebarLinks.map(link => {
@@ -109,7 +109,7 @@ const Header = () => {
               )
             })}
             <li className="open-menu-icon" onClick={() => setShowSidebar(true)}>
-              <FontAwesomeIcon icon={faBars} size="2x" />
+              <FontAwesomeIcon icon={faBars} size="xl" />
             </li>
           </ul>
         </nav>
