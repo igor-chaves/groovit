@@ -6,6 +6,7 @@ const ImageCard = ({ serviceType, position }: { serviceType: "ses" | "sier"; pos
   return (
     <div className={`flex-1 flex items-center justify-${position}`}>
       <Image
+        loading="lazy" //image is too heavy on the first load, this prevents delay for the user
         src={serviceType === "ses" ? "/ses.avif" : "/sier.avif"}
         alt={`${serviceType} image`}
         width={450}
@@ -72,7 +73,7 @@ export default function Igor() {
       <div className="w-full bg-gray-300 py-10">
         <h1 className="text-center">OUR SERVICES</h1>
 
-        <div className="flex flex-col gap-8 mx-10 my-20 md:flex-row md:px-30">
+        <div className="flex flex-col gap-8 md:gap-16 mx-10 my-20 md:flex-row md:px-5 lg:px-30">
           <ImageCard serviceType="ses" position="start" />
 
           <div className="flex-1 flex flex-col justify-center">
@@ -88,7 +89,7 @@ export default function Igor() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8 mx-10 my-20 md:flex-row md:px-30">
+        <div className="flex flex-col gap-8 md:gap-16 mx-10 my-20 md:flex-row md:px-5 lg:px-30">
           {windowSize > 768 ? (
             <>
               <TextCard />
